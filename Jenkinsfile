@@ -13,7 +13,7 @@ pipeline {
         stage('STAGE 00'){ 
             steps{
                 withAnt{
-			  bat "C:\ant\bin\ant.bat -file build.xml test jar"
+			  bat "ant -file build.xml test jar"
 			}
             }
         }
